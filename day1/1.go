@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Part1_1(str string) int {
+func Day1_1(str string) int {
 	lines := strings.Split(str, "\n")
 
 	largestSum := 0
@@ -32,7 +32,7 @@ func Part1_1(str string) int {
 	return largestSum
 }
 
-func Part1_2(str string) int {
+func Day1_2(str string) int {
 	max := math.MaxInt16
 	lines := strings.Split(str, "\n")
 

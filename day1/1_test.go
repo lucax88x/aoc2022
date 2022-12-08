@@ -21,13 +21,13 @@ func TestExampleInput(t *testing.T) {
 
 10000`
 
-	shared.HelperTest(Part1_1, ex, 24000, t)
-	shared.HelperTest(Part1_2, ex, 45000, t)
+	shared.HelperTest(Day1_1, ex, 24000, t)
+	shared.HelperTest(Day1_2, ex, 45000, t)
 }
 
 func TestRealInput(t *testing.T) {
 	content := shared.ReadFile("input")
 
-	shared.HelperTest(Part1_1, content, 67622, t)
-	shared.HelperTest(Part1_2, content, 201491, t)
+	shared.HelperTest(Day1_1, content, 67622, t)
+	shared.HelperTest(Day1_2, content, 201491, t)
 }

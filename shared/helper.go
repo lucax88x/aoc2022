@@ -8,7 +8,7 @@ import (
 func HelperTest(sut func(string) int, input string, expected int, t *testing.T) {
 	result := sut(input)
 	if result != expected {
-		t.Errorf("should be %d but is %d", expected, result)
+		t.Errorf("%s: should be %d but is %d", input, expected, result)
 	}
 }
 
