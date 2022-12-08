@@ -1,7 +1,6 @@
-package main
+package day1
 
 import (
-	"fmt"
 	"math"
 	"sort"
 	"strconv"
@@ -67,8 +66,6 @@ func Part1_2(str string) int {
 
 		currentSum += parseLine(line)
 	}
-
-	fmt.Printf("%v", largestThreeSums)
 
 	finalSum := 0
 	for _, sum := range largestThreeSums {
