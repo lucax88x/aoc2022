@@ -116,17 +116,14 @@ func Part2_1(str string) int {
 	points := 0
 	for _, line := range lines {
 		if len(line) >= 3 {
-			player := NewHand(string(line[0]))
-			opponent := NewHand(string(line[2]))
+			player := NewHand(string(line[2]))
+			opponent := NewHand(string(line[0]))
 
 			points += player.calculate_shape_points()
-			// fmt.Printf("adding shape %v", player.calculate_shape_points())
-			println()
 
 			outcome := player.match(opponent)
 
 			points += outcome.calculate()
-			// fmt.Printf("adding outcome %v", outcome.calculate())
 		}
 	}
 
