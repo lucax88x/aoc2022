@@ -1,0 +1,20 @@
+package day10
+
+import (
+	"aoc2022/shared"
+	"testing"
+)
+
+func TestExampleInput10(t *testing.T) {
+	ex := ``
+
+	shared.HelperTest(Day10_1, ex, 1, t)
+	shared.HelperTest(Day10_2, ex, 1, t)
+}
+
+func TestRealInput10(t *testing.T) {
+	content := shared.ReadFile("input")
+
+	shared.HelperTest(Day10_1, content, 1, t)
+	shared.HelperTest(Day10_2, content, 1, t)
+}
