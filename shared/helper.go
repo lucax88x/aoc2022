@@ -1,6 +1,7 @@
 package shared
 
 import (
+	"fmt"
 	"os"
 	"testing"
 )
@@ -8,7 +9,7 @@ import (
 func HelperTest(sut func(string) int, input string, expected int, t *testing.T) {
 	result := sut(input)
 	if result != expected {
-		t.Errorf("%s: should be %d but is %d", input, expected, result)
+		t.Errorf("should be %d but is %d", expected, result)
 	}
 }
 
@@ -20,4 +21,9 @@ func ReadFile(file string) string {
 	}
 
 	return string(content)
+}
+
+func Debug(format string, a ...any) {
+	fmt.Printf(format, a...)
+	println()
 }
