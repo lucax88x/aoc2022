@@ -1,33 +1,31 @@
 package day1
 
 import (
-	"aoc2022/shared"
+	"aoc2023/shared"
 	"testing"
 )
 
 func TestExampleInput(t *testing.T) {
-	ex := `1000
-2000
-3000
+	ex1 := `1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet`
 
-4000
+	ex2 := `two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen`
 
-5000
-6000
-
-7000
-8000
-9000
-
-10000`
-
-	shared.HelperTest(Day1_1, ex, 24000, t)
-	shared.HelperTest(Day1_2, ex, 45000, t)
+	shared.HelperTest(Day11, ex1, 142, t)
+	shared.HelperTest(Day12, ex2, 281, t)
 }
 
 func TestRealInput(t *testing.T) {
 	content := shared.ReadFile("input")
 
-	shared.HelperTest(Day1_1, content, 67622, t)
-	shared.HelperTest(Day1_2, content, 201491, t)
+	shared.HelperTest(Day11, content, 55123, t)
+	shared.HelperTest(Day12, content, 55260, t)
 }

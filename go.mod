@@ -1,5 +1,5 @@
-module aoc2022
+module aoc2023
 
-go 1.19
+go 1.21
 
 require golang.org/x/exp v0.0.0-20221208152030-732eee02a75a // indirect
